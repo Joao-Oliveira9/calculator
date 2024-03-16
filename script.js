@@ -40,10 +40,8 @@ commandButtons.addEventListener('click',function(e){
     
     //transforma o array em uma string que não tem separador e em seguida converte para um numero
     operand = input.join('');
-    operand = parseInt(operand);
+    operand = parseFloat(operand);
 
-    
-  
     if(contDot == 0){
         number1 = operand;
         contDot++;
@@ -58,7 +56,7 @@ commandButtons.addEventListener('click',function(e){
 
 resultButton.addEventListener('click',function(e){
     operand = input.join('');
-    operand = parseInt(operand);
+    operand = parseFloat(operand);
 
     if(contDot == 1){
         number2 = operand;
